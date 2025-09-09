@@ -1764,10 +1764,13 @@ Ett annat gratisalternativ är \emph{Xming} som finns på
 
 För MacOS finns X-servern XQuartz att ladda ner från \ST{http://www.xquartz.org/}. Den är gratis att installera och använda. När du startar XQuartz får du även upp ett terminalfönster. Från detta kan du ansluta till LTHs inloggningsserver med ssh på samma sätt som om du kör Linux, se nedan.
 
-%%NOTE: Wayland?
-Kör du någon variant Linux hemma är det mycket enklare - då har du nämligen redan
+Kör du någon variant Linux hemma är det offtast enklare - då har du troligen redan
 en X-server. I så fall är det bara att logga in som vanligt med ssh men lägga
 till \ST{-Y} som argument, alltså \ST{ssh -Y username@login.student.lth.se}.
+
+För att kolla om du har en X-server, kan du kolla ifall \ST{DISPLAY} variabeln är satt.
+Detta kan t.ex. göras genom att skriva ut dess innehåll med: \ST{echo "\$DISPLAY"}.
+Om inget skrivs ut saknas en X-Server.
 
 \section{Program hemma}
 
