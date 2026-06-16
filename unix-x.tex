@@ -1424,16 +1424,17 @@ Då kommer alla java-filer i mappen att kompileras.
 
 \section{Scala i terminalen}
 \index{Scala i terminalen}
-Program skrivna i Scala kan kompileras och köras på motsvarande sätt som om de var skrivna i Java. För att kompilera \texttt{Main.scala} så skriver man:
+Program skrivna i Scala ska ha filnamn som slutar på \texttt{.scala} till exempel \texttt{hello.scala}. Du kan kompilera och köra alla Scala-filer i aktuell katalog (inkl. alla ev. underkataloger) med detta kommando:
 \begin{example}
-  lo-1\{e01nn\}: \textbf{scalac Main.scala}
-\end{example}
-För att köra programmet skriver man sedan (om klassen som innehåller main-metoden heter Main):
-\begin{example}
-  lo-1\{e01nn\}: \textbf{scala Main}
+  lo-1\{e01nn\}: \textbf{scala run .}
 \end{example}
 
-Se kursboken i EDAB05 Programmering, grundkurs för mer information om hur du programmerar i Scala.
+Du startar Scalas interaktiva skal med kommandot:
+\begin{example}
+  lo-1\{e01nn\}: \textbf{scala repl .}
+\end{example}
+Den avslutande punkten är här valfri. Punkten refererar till aktuell katalog och medför att all Scala-kod i aktuell katalog och dess underkataloger blir tillgänglig för experimenterande i Scala REPL (Read-Evaluate-Print-Loop).
+Se vidare kursboken i EDAB05 Programmering, grundkurs för mer information om hur du programmerar i Scala.
 
 
 \section{Specialtecken}
